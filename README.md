@@ -5,8 +5,7 @@ This image currently contains:
    * wget
    * curl
    * git
-   * Erlang
-   * Elixir + mix
+   * Erlang, Elixir, mix, hex, rebar
    * Python + pip
    * Node
    * inotify-tools

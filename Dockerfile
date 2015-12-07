@@ -22,5 +22,5 @@ RUN apt-get update -q && \
     apt-get install -y build-essential wget curl git erlang-base=1:18.1 erlang-dev=1:18.1 erlang-eunit=1:18.1 erlang-xmerl=1:18.1 elixir=1.1.1-2 nodejs=0.12.9-1nodesource1~vivid1 docker-engine=1.9.1-0~vivid python-pip inotify-tools postgresql-client jed nano mtr-tiny lsof rsync rdate dnsutils dstat ifstat bwm-ng mosh telnet sysstat && \
     pip install docker-compose && \
     mix local.hex --force && \
+    mix local.rebar --force
     apt-get clean -y
-
