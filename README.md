@@ -25,6 +25,7 @@ This image currently contains:
    * mosh
    * telnet
    * sysstat
+   * PHP 5 CLI, Composer, PHP FPM, PHP Pear, PHP CodeSniffer, various PHP packages, and IonCube Loader
    
 It can be used as a build environment by a CI system, or to quickly bring up an environment during development work.
 
