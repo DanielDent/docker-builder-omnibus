@@ -34,4 +34,6 @@ RUN apt-get update -q && \
     mix local.hex --force && \
     mix local.rebar --force && \
     curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin && \
+    mkdir /app && \
     apt-get clean -y
+WORKDIR /app
