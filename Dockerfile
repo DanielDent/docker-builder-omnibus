@@ -30,7 +30,7 @@ RUN apt-get update -q && \
         erlang-xmerl=1:18.2 elixir=1.1.1-2 nodejs=0.12.9-1nodesource1~vivid1 docker-engine=1.9.1-0~vivid python-pip \
         inotify-tools postgresql-client jed nano mtr-tiny lsof rsync rdate dnsutils dstat ifstat bwm-ng mosh telnet \
         sysstat php5-cli php5-curl php5-mysql php5-pgsql php5-gd mysql-client php5-mysql php-getid3 php5-fpm php5-dev \
-        php5-json salt-master salt-minion salt-ssh salt-syndic salt-cloud && \
+        php5-json salt-master salt-minion salt-ssh salt-syndic salt-cloud net-tools iputils-ping && \
     wget http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz && \
     tar -xvvzf ioncube_loaders_lin_x86-64.tar.gz && \
     mv ioncube/ioncube_loader_lin_5.6.so /usr/lib/php5/20131226 && \

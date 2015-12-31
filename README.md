@@ -25,6 +25,8 @@ This image currently contains:
    * mosh
    * telnet
    * sysstat
+   * iputils-ping
+   * net-tools
    * PHP 5 CLI, Composer, PHP FPM, PHP Pear, PHP CodeSniffer, various PHP packages, and IonCube Loader
    * SaltStack
    
