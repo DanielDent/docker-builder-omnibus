@@ -27,12 +27,12 @@ RUN apt-get update -q && \
     apt-get update -q && \
     apt-get dist-upgrade -y && \
     apt-get install -y build-essential wget curl git erlang-base=1:18.2 erlang-dev=1:18.2 erlang-eunit=1:18.2 \
-        erlang-xmerl=1:18.2 elixir=1.1.1-2 nodejs=0.12.9-1nodesource1~vivid1 docker-engine=1.9.1-0~vivid python-pip \
+        erlang-xmerl=1:18.2 elixir=1.2.0-1 nodejs=0.12.10-1nodesource1~vivid1 docker-engine=1.9.1-0~vivid python-pip \
         inotify-tools postgresql-client jed nano mtr-tiny lsof rsync rdate dnsutils dstat ifstat bwm-ng mosh telnet \
         sysstat php5-cli php5-curl php5-mysql php5-pgsql php5-gd mysql-client php5-mysql php-getid3 php5-fpm php5-dev \
         php5-json salt-master salt-minion salt-ssh salt-syndic salt-cloud net-tools iputils-ping && \
     wget http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz && \
-    echo "a103d98d5940f8c7463f37db53f2a55fd1bc840835c3c564bf07c50b04a2b9b8  ioncube_loaders_lin_x86-64.tar.gz"|shasum -c && \
+    echo "0a7acc2544ac6e58e8001902be328b3984b4c4d154b42bd9175c79f12edd8b87  ioncube_loaders_lin_x86-64.tar.gz"|sha256sum -c && \
     tar -xvvzf ioncube_loaders_lin_x86-64.tar.gz && \
     mv ioncube/ioncube_loader_lin_5.6.so /usr/lib/php5/20131226 && \
     rm -Rf ioncube_loaders_lin_x86-64.tar.gz ioncube && \
