@@ -21,13 +21,13 @@ RUN apt-get update -q && \
     apt-key add docker.gpg.key && \
     apt-key add saltstack.gpg.key && \
     echo "deb http://apt.dockerproject.org/repo ubuntu-vivid main" > /etc/apt/sources.list.d/docker.list && \
-    echo 'deb http://deb.nodesource.com/node_0.12 vivid main' > /etc/apt/sources.list.d/nodesource.list && \
+    echo 'deb http://deb.nodesource.com/node_4.x vivid main' > /etc/apt/sources.list.d/nodesource.list && \
     echo "deb http://packages.erlang-solutions.com/ubuntu vivid contrib" > /etc/apt/sources.list.d/erlang-solutions.list && \
     echo "deb http://repo.saltstack.com/apt/ubuntu/14.04/amd64/2015.8 trusty main" > /etc/apt/sources.list.d/saltstack.list && \
     apt-get update -q && \
     apt-get dist-upgrade -y && \
     apt-get install -y build-essential wget curl git erlang-base=1:18.2 erlang-dev=1:18.2 erlang-eunit=1:18.2 \
-        erlang-xmerl=1:18.2 elixir=1.2.0-1 nodejs=0.12.10-1nodesource1~vivid1 docker-engine=1.9.1-0~vivid python-pip \
+        erlang-xmerl=1:18.2 elixir=1.2.0-1 nodejs=4.3.1-1nodesource1~vivid1 docker-engine=1.9.1-0~vivid python-pip \
         inotify-tools postgresql-client jed nano mtr-tiny lsof rsync rdate dnsutils dstat ifstat bwm-ng mosh telnet \
         sysstat php5-cli php5-curl php5-mysql php5-pgsql php5-gd mysql-client php5-mysql php-getid3 php5-fpm php5-dev \
         php5-json salt-master salt-minion salt-ssh salt-syndic salt-cloud net-tools iputils-ping && \
