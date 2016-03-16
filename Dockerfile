@@ -32,7 +32,7 @@ RUN apt-get update -q && \
         sysstat php5-cli php5-curl php5-mysql php5-pgsql php5-gd mysql-client php5-mysql php-getid3 php5-fpm php5-dev \
         php5-json salt-master salt-minion salt-ssh salt-syndic salt-cloud net-tools iputils-ping && \
     wget http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz && \
-    echo "0a7acc2544ac6e58e8001902be328b3984b4c4d154b42bd9175c79f12edd8b87  ioncube_loaders_lin_x86-64.tar.gz"|sha256sum -c && \
+    echo "ee414ce42f071b78ed90d2cc3e388e6a77f8fbefa0e2d092b93a4014552ae1fc  ioncube_loaders_lin_x86-64.tar.gz"|sha256sum -c && \
     tar -xvvzf ioncube_loaders_lin_x86-64.tar.gz && \
     mv ioncube/ioncube_loader_lin_5.6.so /usr/lib/php5/20131226 && \
     rm -Rf ioncube_loaders_lin_x86-64.tar.gz ioncube && \
