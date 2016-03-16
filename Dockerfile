@@ -27,7 +27,7 @@ RUN apt-get update -q && \
     apt-get update -q && \
     apt-get dist-upgrade -y && \
     apt-get install -y build-essential wget curl git erlang-base=1:18.2 erlang-dev=1:18.2 erlang-eunit=1:18.2 \
-        erlang-xmerl=1:18.2 elixir=1.2.0-1 nodejs=4.3.1-1nodesource1~vivid1 docker-engine=1.9.1-0~vivid python-pip \
+        erlang-xmerl=1:18.2 elixir=1.2.0-1 nodejs=4.4.0-1nodesource1~vivid1 docker-engine=1.9.1-0~vivid python-pip \
         inotify-tools postgresql-client jed nano mtr-tiny lsof rsync rdate dnsutils dstat ifstat bwm-ng mosh telnet \
         sysstat php5-cli php5-curl php5-mysql php5-pgsql php5-gd mysql-client php5-mysql php-getid3 php5-fpm php5-dev \
         php5-json salt-master salt-minion salt-ssh salt-syndic salt-cloud net-tools iputils-ping && \
